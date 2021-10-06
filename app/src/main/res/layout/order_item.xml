@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/cardView"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5sp"
+
+    android:layout_margin="5sp"
+    app:contentPadding="10sp"
+    app:rippleColor="@color/colorPrimary"
+    app:cardElevation="2sp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:weightSum="5"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvDeliverBoy"
+                    android:text="N/A"
+                    android:fontFamily="@font/montserrat_b"
+                    android:drawablePadding="@dimen/Margin5dp"
+
+                    android:layout_gravity="center|start"
+                    android:gravity="center|start"
+                    android:drawableLeft="@drawable/deliverboy"
+                    android:drawableTint="@color/colorPrimary"
+
+
+                    android:textSize="@dimen/text_size_edit"
+                    android:textColor="@color/black"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpUsage" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_gravity="center|end"
+                android:gravity="center|end"
+                android:layout_height="wrap_content">
+              <androidx.appcompat.widget.AppCompatImageView
+                  android:layout_width="25sp"
+                  android:elevation="@dimen/Margin5dp"
+                  android:id="@+id/tvCheckUncheck"
+                  android:background="@drawable/uncheck"
+                  android:layout_height="25sp"/>
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/tvCheckBox"
+                  android:visibility="gone"
+                    android:layout_width="25sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="25sp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_marginTop="@dimen/Margin5dp"
+            android:layout_marginBottom="@dimen/Margin5dp"
+            android:layout_height="2sp"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:id="@+id/detailsShow"
+            android:layout_marginTop="@dimen/Margin5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="@dimen/Margin50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/Margin50dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/Margin50dp"
+                        android:id="@+id/productImg"
+                        android:src="@drawable/logo"
+                        android:layout_height="@dimen/Margin50dp"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvProductName"
+                    android:text="Jan 1 2020"
+                    android:layout_gravity="center|start"
+                    android:gravity="center|start"
+
+
+
+                    app:fontFamily="@font/montserrat_b"
+                    android:textSize="@dimen/text_size_edit"
+                    android:textColor="@color/black"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpUsage" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvProductAttribute"
+                    android:text="Today's Count"
+                    android:layout_gravity="center|start"
+                    android:gravity="center|start"
+
+
+
+                    app:fontFamily="@font/montserrat"
+                    android:textSize="@dimen/ten"
+                    android:textColor="@color/black"
+                    android:alpha=".7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpUsage" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.8"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvPrice"
+
+                    android:text="23"
+                    android:layout_gravity="center|start"
+                    android:gravity="center|end"
+
+
+
+                    app:fontFamily="@font/montserrat_b"
+                    android:textSize="@dimen/text_size_edit"
+                    android:textColor="@color/green"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpUsage" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvTotalPrice"
+
+                    android:text="23"
+                    android:layout_gravity="center|start"
+                    android:gravity="center|end"
+
+
+
+                    app:fontFamily="@font/montserrat_b"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpUsage" />
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginTop="@dimen/Margin10dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/catName"
+                android:layout_width="wrap_content"
+
+                android:text="Electronic"
+                android:padding="@dimen/Margin5dp"
+android:layout_marginRight="@dimen/Margin5dp"
+                android:layout_gravity="center|start"
+
+
+                android:background="@drawable/gray_fram_bg"
+
+                app:fontFamily="@font/montserrat"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:alpha=".9"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/subCat"
+                android:layout_marginRight="@dimen/Margin5dp"
+                android:text="Electronic"
+                android:padding="@dimen/Margin5dp"
+
+                android:layout_gravity="center|start"
+
+
+                android:background="@drawable/gray_fram_bg"
+
+                app:fontFamily="@font/montserrat"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:alpha=".9"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/subtosubCat"
+                android:text="Electronic"
+                android:padding="@dimen/Margin5dp"
+
+                android:layout_gravity="center|start"
+
+
+                android:background="@drawable/gray_fram_bg"
+
+                app:fontFamily="@font/montserrat"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:alpha=".9"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_marginTop="@dimen/Margin5dp"
+            android:layout_marginBottom="@dimen/Margin5dp"
+            android:layout_height="2sp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="start|center"
+                android:gravity="start|center"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStatus"
+                    android:text="ffff"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="@dimen/text_size_edit"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat_b"
+                    android:gravity="center|start"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/orderAssign"
+                    android:visibility="gone"
+                    android:text="Order Assign"
+
+                    android:layout_gravity="center|end"
+                    android:gravity="center"
+                    android:layout_margin="1sp"
+
+                    android:background="@drawable/green_circle"
+                    android:padding="8dp"
+
+
+                    app:fontFamily="@font/montserrat_b"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpUsage" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

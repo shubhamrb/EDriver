@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+android:id="@+id/cardView"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5sp"
+
+    android:layout_margin="5sp"
+    app:contentPadding="10sp"
+    app:rippleColor="@color/colorPrimary"
+    app:cardElevation="5sp">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5"
+
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="@dimen/Margin50dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+     android:layout_height="@dimen/Margin50dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/Margin50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:layout_height="@dimen/Margin50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/Margin50dp"
+            android:id="@+id/productImg"
+            android:src="@drawable/f"
+            android:layout_height="@dimen/Margin50dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+android:id="@+id/productName"
+                android:text="Jan 1 2020"
+                android:layout_gravity="center|start"
+                android:gravity="center|start"
+
+
+
+                app:fontFamily="@font/montserrat_b"
+                android:textSize="@dimen/ten"
+                android:textColor="@color/black"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                tools:ignore="SpUsage" />
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+
+               android:layout_height="wrap_content">
+               <com.google.android.material.textview.MaterialTextView
+                   android:id="@+id/catName"
+                   android:layout_width="wrap_content"
+
+                   android:text="Electronic"
+                   android:padding="@dimen/Margin5dp"
+android:layout_marginEnd="@dimen/Margin5dp"
+                   android:layout_gravity="center|start"
+
+
+android:background="@drawable/gray_fram_bg"
+
+                   app:fontFamily="@font/montserrat"
+                   android:textSize="8dp"
+                   android:textColor="@color/black"
+                   android:alpha=".9"
+                   app:layout_constraintTop_toTopOf="parent"
+                   android:layout_height="wrap_content"
+                  />
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+android:id="@+id/subCat"
+                   android:layout_marginEnd="@dimen/Margin5dp"
+                   android:text="Electronic"
+                   android:padding="@dimen/Margin5dp"
+
+                   android:layout_gravity="center|start"
+
+
+                   android:background="@drawable/gray_fram_bg"
+
+                   app:fontFamily="@font/montserrat"
+                   android:textSize="8dp"
+                   android:textColor="@color/black"
+                   android:alpha=".9"
+                   app:layout_constraintTop_toTopOf="parent"
+                   android:layout_height="wrap_content"
+                   />
+
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+android:id="@+id/subtosubCat"
+                   android:text="Electronic"
+                   android:padding="@dimen/Margin5dp"
+
+                   android:layout_gravity="center|start"
+
+
+                   android:background="@drawable/gray_fram_bg"
+
+                   app:fontFamily="@font/montserrat"
+                   android:textSize="8dp"
+                   android:textColor="@color/black"
+                   android:alpha=".9"
+                   app:layout_constraintTop_toTopOf="parent"
+                   android:layout_height="wrap_content"
+                   />
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center|end"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/Margin5dp"
+
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/actualPrice"
+                    android:layout_width="wrap_content"
+
+                    android:text="1"
+                    android:padding="@dimen/Margin5dp"
+                    android:layout_marginEnd="@dimen/Margin5dp"
+                    android:layout_gravity="center|start"
+
+
+                    app:fontFamily="@font/montserrat"
+                    android:textSize="@dimen/text_size_edit"
+                    android:textColor="@color/black"
+                    android:alpha=".9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvQuantity"
+                    android:layout_marginEnd="@dimen/Margin5dp"
+                    android:text="2"
+                    android:padding="@dimen/Margin5dp"
+
+                    android:layout_gravity="center|start"
+
+
+
+                    app:fontFamily="@font/montserrat"
+                    android:textSize="@dimen/text_size_edit"
+                    android:textColor="@color/black"
+                    android:alpha=".9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+
+                    android:id="@+id/tvTotalPrice"
+                    android:text=""
+                    android:gravity="center"
+
+                    android:padding="@dimen/Margin5dp"
+
+                    android:layout_gravity="center|start"
+android:visibility="gone"
+
+
+                    app:fontFamily="@font/montserrat"
+                    android:textSize="8dp"
+                    android:textColor="@color/black"
+                    android:alpha=".9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+android:id="@+id/tvTotPrice"
+                android:text="+ 2000"
+                android:layout_gravity="center|start"
+                android:gravity="center"
+
+
+
+                app:fontFamily="@font/montserrat_b"
+                android:drawablePadding="@dimen/Margin5dp"
+                 android:textSize="@dimen/Margin15dp"
+                android:textColor="@color/green_light"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                tools:ignore="SpUsage" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

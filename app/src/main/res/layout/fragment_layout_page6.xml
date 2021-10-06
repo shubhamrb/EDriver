@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay"
+        app:elevation="0dp"
+        app:titleTextColor="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+
+            app:elevation="0dp"
+            app:popupTheme="@style/Platform.MaterialComponents"
+            app:titleTextColor="@color/white">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/Margin10dp"
+        android:layout_marginLeft="@dimen/Margin10dp"
+        android:fontFamily="@font/poppins"
+        android:padding="@dimen/Margin5dp"
+        android:text="Overview"
+        android:textColor="#494444"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#DADADA"
+        android:textSize="@dimen/Margin15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/Margin10dp"
+        android:layout_marginLeft="@dimen/Margin10dp"
+        android:fontFamily="@font/poppins"
+        android:padding="@dimen/Margin5dp"
+        android:text="The complete highlights based on your actions"
+        android:textColor="#302828"
+        android:textSize="10sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/Margin5dp"
+        android:orientation="vertical">
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical" />-->
+<!--            -->
+<!--        </ScrollView>-->
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_margin="5sp"
+            app:cardBackgroundColor="@color/white"
+
+            app:cardCornerRadius="10sp"
+            app:cardElevation="5sp"
+            app:contentPadding="10sp"
+            app:rippleColor="@color/colorPrimary">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="5">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="@dimen/Margin50dp"
+                        android:layout_height="@dimen/Margin50dp"
+                        android:layout_gravity="center|start"
+                        android:background="@drawable/red_circle"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/margin25dp"
+                            android:layout_height="@dimen/margin25dp"
+                            android:background="@drawable/ic_bookmark_black_24dp"
+                            android:backgroundTint="@color/white"
+                            android:rotation="180" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:alpha=".7"
+
+
+                        android:gravity="center|start"
+                        android:text="Jan 1 2020"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten"
+                        app:fontFamily="@font/montserrat"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+
+
+                        android:text="Total Deliveries "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_edit"
+
+                        app:fontFamily="@font/montserrat_b"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:alpha=".7"
+
+
+                        android:gravity="center|start"
+                        android:text="Today's Count"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten"
+                        app:fontFamily="@font/montserrat"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+
+                        android:id="@+id/tvcn"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center|start"
+                        android:gravity="center"
+
+
+                        android:text="23"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/Margin20dp"
+
+                        app:fontFamily="@font/montserrat_b"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_margin="5sp"
+            app:cardBackgroundColor="@color/white"
+
+            app:cardCornerRadius="10sp"
+            app:cardElevation="5sp"
+            app:contentPadding="10sp"
+            app:rippleColor="@color/colorPrimary">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="5">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="@dimen/Margin50dp"
+                        android:layout_height="@dimen/Margin50dp"
+                        android:layout_gravity="center|start"
+                        android:background="@drawable/green_circle"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/margin25dp"
+                            android:layout_height="@dimen/margin25dp"
+                            android:background="@drawable/ic_bookmark_black_24dp"
+                            android:backgroundTint="@color/white"
+                            android:rotation="180" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvDatetwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:alpha=".7"
+
+
+                        android:gravity="center|start"
+                        android:text="Jan 1 2020"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten"
+                        app:fontFamily="@font/montserrat"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+
+
+                        android:text="Today's Collection "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_edit"
+
+                        app:fontFamily="@font/montserrat_b"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:alpha=".7"
+
+
+                        android:gravity="center|start"
+                        android:text="Today's Count"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten"
+                        app:fontFamily="@font/montserrat"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvct"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center"
+
+
+                        android:text="2656"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/Margin20dp"
+
+                        app:fontFamily="@font/montserrat_b"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_margin="5sp"
+            app:cardBackgroundColor="@color/white"
+
+            app:cardCornerRadius="10sp"
+            app:cardElevation="5sp"
+            app:contentPadding="10sp"
+            app:rippleColor="@color/colorPrimary">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="5">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="@dimen/Margin50dp"
+                        android:layout_height="@dimen/Margin50dp"
+                        android:layout_gravity="center|start"
+                        android:background="@drawable/blue_circle"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/margin25dp"
+                            android:layout_height="@dimen/margin25dp"
+                            android:background="@drawable/ic_bookmark_black_24dp"
+                            android:backgroundTint="@color/white"
+                            android:rotation="180" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvDatefour"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:alpha=".7"
+                        android:gravity="center|start"
+                        android:text="Jan 1 2020"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten"
+                        app:fontFamily="@font/montserrat"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+                        android:text="today's settlements"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_edit"
+                        app:fontFamily="@font/montserrat_b"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:alpha=".7"
+                        android:gravity="center|start"
+                        android:text="Today's Count"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten"
+                        app:fontFamily="@font/montserrat"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center"
+                        android:text="2000"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/Margin20dp"
+                        app:fontFamily="@font/montserrat_b"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_margin="5sp"
+            app:cardBackgroundColor="@color/white"
+
+            app:cardCornerRadius="10sp"
+            app:cardElevation="5sp"
+            app:contentPadding="10sp"
+            app:rippleColor="@color/colorPrimary">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="5">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="@dimen/Margin50dp"
+                        android:layout_height="@dimen/Margin50dp"
+                        android:layout_gravity="center|start"
+                        android:background="@drawable/black_circle"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/margin25dp"
+                            android:layout_height="@dimen/margin25dp"
+                            android:background="@drawable/ic_bookmark_black_24dp"
+                            android:backgroundTint="@color/white"
+                            android:rotation="180" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvDateSix"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:alpha=".7"
+
+
+                        android:gravity="center|start"
+                        android:text="Jan 1 2020"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten"
+                        app:fontFamily="@font/montserrat"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+
+
+                        android:text="Todays Unsettlements "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_edit"
+
+                        app:fontFamily="@font/montserrat_b"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:alpha=".7"
+
+
+                        android:gravity="center|start"
+                        android:text="Today's Count"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ten"
+                        app:fontFamily="@font/montserrat"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvsix"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center"
+
+
+                        android:text="665"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/Margin20dp"
+
+                        app:fontFamily="@font/montserrat_b"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin10dp"
+            android:layout_marginLeft="@dimen/Margin10dp"
+            android:fontFamily="@font/poppins"
+            android:padding="@dimen/Margin5dp"
+            android:text="Delivery Nearby"
+            android:textColor="#494444"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#DADADA"
+            android:textSize="@dimen/Margin15dp"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:itemCount="1"
+            tools:listitem="@layout/consignor_nearby_delivery" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin10dp"
+            android:layout_marginLeft="@dimen/Margin10dp"
+            android:fontFamily="@font/poppins"
+            android:padding="@dimen/Margin5dp"
+            android:text="Today's Recent Deliveries"
+            android:textColor="#494444"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#DADADA"
+            android:textSize="@dimen/Margin15dp"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:itemCount="1"
+            tools:listitem="@layout/consignor_recent_delivery" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin10dp"
+            android:layout_marginLeft="@dimen/Margin10dp"
+            android:fontFamily="@font/poppins"
+            android:padding="@dimen/Margin5dp"
+            android:text="Recent Transactions"
+            android:textColor="#494444"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#DADADA"
+            android:textSize="@dimen/Margin15dp"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:itemCount="3"
+            tools:listitem="@layout/consigor_recent_transaction_item" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

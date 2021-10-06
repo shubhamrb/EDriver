@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10sp"
+
+    android:layout_margin="5sp"
+    app:contentPadding="10sp"
+    app:rippleColor="@color/colorPrimary"
+    app:cardElevation="5sp">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5"
+
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="@dimen/Margin50dp"
+    android:gravity="center"
+    android:layout_gravity="center|start"
+     android:layout_height="@dimen/Margin50dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/Margin50dp"
+        android:gravity="center"
+        android:layout_gravity="center|start"
+        android:background="@drawable/green_circle"
+        android:layout_height="@dimen/Margin50dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/margin25dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_bookmark_black_24dp"
+            android:layout_height="@dimen/margin25dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:alpha=".7"
+
+
+                android:gravity="center|start"
+                android:text="#TNX6549845"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ten"
+                app:fontFamily="@font/montserrat"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpUsage" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:gravity="center|start"
+
+
+                android:text="Admin Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_edit"
+
+                app:fontFamily="@font/montserrat_b"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpUsage" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:alpha=".7"
+
+
+                android:gravity="center|start"
+                android:text="Recived on 5,Jan 2020"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ten"
+                app:fontFamily="@font/montserrat"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpUsage" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:gravity="center|end"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+
+                android:text="+ 2000"
+                android:layout_gravity="center|start"
+                android:gravity="center|end"
+
+
+
+                app:fontFamily="@font/montserrat_b"
+                android:drawablePadding="@dimen/Margin5dp"
+                 android:textSize="@dimen/Margin15dp"
+                android:textColor="@color/green_light"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                tools:ignore="SpUsage" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tittle_text_size">20dp</dimen>
+    <dimen name="twenty_five">25dp</dimen>
+    <dimen name="text_size_edit">13dp</dimen>
+    <dimen name="sing_up">14dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="elevan">11dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+
+
+    <dimen name="margin200dp">200dp</dimen>
+    <dimen name="Margin20dp">20dp</dimen>
+    <dimen name="Margin5dp">5dp</dimen>
+    <dimen name="Margin10dp">10dp</dimen>
+    <dimen name="Margin15dp">15dp</dimen>
+    <dimen name="Margin30dp">30dp</dimen>
+    <dimen name="Margin50dp">50dp</dimen>
+    <dimen name="margin25dp">25dp</dimen>
+    <dimen name="margin250dp">250dp</dimen>
+    <dimen name="margin300dp">300dp</dimen>
+
+    <dimen name="margin_top_logo">40dp</dimen>
+    <dimen name="primaryTextSize">18sp</dimen>
+    <dimen name="Margin3dp">3dp</dimen>
+    <dimen name="nav_header_height">130dp</dimen>
+
+    <dimen name="unitDataHeaderTextSize">12sp</dimen>
+    <dimen name="unitDataSubHeaderTextSize">10sp</dimen>
+    <dimen name="textsize18sp">18sp</dimen>
+    <dimen name="Margin45dp">45dp</dimen>
+    <dimen name="Margin7dp">7dp</dimen>
+    <dimen name="Margin0dp">0dp</dimen>
+    <dimen name="meeting_report300">300dp</dimen>
+    <dimen name="meeting_report200">200dp</dimen>
+    <dimen name="meeting_report120">120dp</dimen>
+    <dimen name="meeting_report65">65dp</dimen>
+    <dimen name="meeting_report80">80dp</dimen>
+    <dimen name="meeting_report50">50dp</dimen>
+    <dimen name="meeting_report60">60dp</dimen>
+    <dimen name="meeting_report45">45dp</dimen>
+    <dimen name="meeting_report30">30dp</dimen>
+    <dimen name="meeting_report40">40dp</dimen>
+    <dimen name="meeting_report_header">50dp</dimen>
+</resources>

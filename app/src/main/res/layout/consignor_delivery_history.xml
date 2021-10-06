@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    app:cardBackgroundColor="@color/bg_color"
+    app:cardCornerRadius="10sp"
+    app:cardElevation="5sp"
+    app:contentPadding="10sp"
+    app:rippleColor="@color/colorPrimary">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="5">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="@dimen/Margin50dp"
+                android:layout_height="@dimen/Margin50dp"
+                android:layout_gravity="center|start"
+                android:background="@drawable/blue_circle"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/margin25dp"
+                    android:layout_height="@dimen/margin25dp"
+                    android:background="@drawable/ic_bookmark_black_24dp"
+                    android:backgroundTint="@color/white"
+                    android:rotation="180" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minWidth="@dimen/meeting_report300"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:alpha=".7"
+
+
+                android:gravity="center|start"
+                android:text="#ODR6549842"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ten"
+                app:fontFamily="@font/montserrat"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpUsage" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:gravity="center|start"
+
+
+                android:text="Consignor "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_edit"
+
+                app:fontFamily="@font/montserrat_b"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpUsage" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:alpha=".7"
+
+
+                android:gravity="center|start"
+                android:text="2.5 Km away from you"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ten"
+                app:fontFamily="@font/montserrat"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpUsage" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center|start"
+                android:width="@dimen/meeting_report80"
+
+
+                android:height="@dimen/Margin30dp"
+                android:background="#2196F3"
+                android:gravity="center"
+
+                android:minWidth="@dimen/meeting_report120"
+                android:text="View"
+
+                android:textColor="@color/bg_color"
+                android:textSize="14sp"
+                app:fontFamily="@font/montserrat_b"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpUsage" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

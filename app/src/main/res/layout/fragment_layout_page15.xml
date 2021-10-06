@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:gravity="top"
+    android:background="@color/gray">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay"
+        app:elevation="0dp"
+        app:titleTextColor="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+
+            app:elevation="0dp"
+            app:popupTheme="@style/Platform.MaterialComponents"
+            app:titleTextColor="@color/white">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:weightSum="5"
+        android:padding="@dimen/five"
+        android:orientation="horizontal"
+        android:background="@drawable/white_gredient_bg"
+        android:layout_height="wrap_content"/>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/ten"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:alpha="0.7"
+            android:gravity="top|start"
+
+            android:text="My Account"
+
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_size_edit"
+            app:fontFamily="@font/montserrat_b"
+
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:alpha="0.8"
+            android:gravity="top|start"
+
+            android:text="Name, mobile no. and more"
+
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/ten"
+            app:fontFamily="@font/montserrat"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/ten"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:alpha="0.7"
+            android:gravity="top|start"
+
+            android:text="Payments"
+
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_size_edit"
+            app:fontFamily="@font/montserrat_b"
+
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:alpha="0.8"
+            android:gravity="top|start"
+
+            android:text="Bank Account Details, Payment statements"
+
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/ten"
+            app:fontFamily="@font/montserrat"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_marginTop="@dimen/five"
+            android:layout_height="1sp"/>
+     </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/ten"
+
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:alpha="0.7"
+            android:gravity="top|start"
+
+            android:text="Lourim"
+
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_size_edit"
+            app:fontFamily="@font/montserrat_b"
+
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:alpha="0.8"
+            android:gravity="top|start"
+
+            android:text="louriuym lipsum"
+
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/ten"
+            app:fontFamily="@font/montserrat"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_marginTop="@dimen/five"
+            android:layout_height="1sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/ten"
+
+        android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            app:fontFamily="@font/montserrat_b"
+            android:gravity="top|start"
+
+            android:layout_gravity="top|start"
+
+            android:textSize="@dimen/text_size_edit"
+
+            android:textColor="@color/black"
+            android:alpha="0.7"
+
+            />
+        <com.google.android.material.textview.MaterialTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help and Support"
+            app:fontFamily="@font/montserrat"
+            android:gravity="top|start"
+
+            android:layout_gravity="top|start"
+
+            android:textSize="@dimen/ten"
+
+            android:textColor="@color/black"
+            android:alpha="0.8"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_marginTop="@dimen/five"
+            android:layout_height="1sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="362dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:capitalize="characters"
+            android:text="Logout"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

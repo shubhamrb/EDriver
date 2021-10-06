@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+
+
+
+    android:background="@color/white"
+    android:padding="@dimen/Margin10dp"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="end|top"
+        android:gravity="end|top"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50sp"
+            android:id="@+id/tvClose"
+            android:background="@drawable/ic_close_black_24dp"
+            android:layout_height="50sp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:layout_height="wrap_content">
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvDate"
+                    android:text="Jan 1 2020"
+                    android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawablePadding="@dimen/Margin5dp"
+                    android:layout_gravity="center|start"
+                    android:gravity="center|start"
+
+
+
+                    app:fontFamily="@font/montserrat"
+                    android:textSize="@dimen/text_size_edit"
+                    android:textColor="@color/black"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpUsage"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_marginTop="@dimen/Margin5dp"
+            android:layout_marginBottom="@dimen/Margin5dp"
+            android:layout_height="2sp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvOrderNumber"
+            android:text="Jan 1 2020"
+            android:layout_gravity="center|start"
+            android:gravity="center|start"
+
+
+
+            app:fontFamily="@font/montserrat"
+            android:textSize="@dimen/text_size_edit"
+            android:textColor="@color/black"
+            android:alpha="1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            tools:ignore="SpUsage" />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvCusName"
+            android:text="Jan 1 2020"
+            android:layout_gravity="center|start"
+            android:gravity="center|start"
+
+
+
+            app:fontFamily="@font/montserrat_b"
+            android:textSize="@dimen/text_size_edit"
+            android:textColor="@color/black"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            tools:ignore="SpUsage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvTotalPrice"
+
+            android:text="23"
+            android:layout_gravity="center|start"
+            android:gravity="center|start"
+
+
+
+            app:fontFamily="@font/montserrat_b"
+            android:textSize="@dimen/text_size_edit"
+            android:textColor="@color/green"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            tools:ignore="SpUsage" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_height="2sp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+
+            android:text=""
+            android:layout_gravity="center|start"
+            android:gravity="center|start"
+
+
+            android:layout_marginTop="@dimen/Margin5dp"
+            app:fontFamily="@font/montserrat"
+            android:textSize="12sp"
+            android:layout_weight="2"
+            android:id="@+id/tvAddress"
+            android:drawableTint="@color/black"
+            android:drawablePadding="@dimen/Margin5dp"
+            android:drawableStart="@drawable/ic_baseline_map_24"
+            android:textColor="@color/black"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            tools:ignore="SpUsage"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_marginTop="@dimen/Margin5dp"
+            android:layout_marginBottom="@dimen/Margin5dp"
+            android:layout_height="2sp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+
+                android:text="Payment Mode"
+                android:layout_gravity="center|start"
+                android:gravity="center|start"
+                android:layout_marginStart="@dimen/Margin10dp"
+                android:layout_marginTop="@dimen/Margin5dp"
+
+                android:layout_marginBottom="@dimen/Margin5dp"
+                app:fontFamily="@font/montserrat_b"
+                android:textSize="@dimen/text_size_edit"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                tools:ignore="SpUsage" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:id="@+id/payMode"
+                android:text=" "
+                android:layout_weight="3"
+                android:layout_gravity="center|end"
+                android:gravity="center|end"
+                android:layout_marginStart="@dimen/Margin10dp"
+                android:layout_marginTop="@dimen/Margin5dp"
+
+                android:layout_marginBottom="@dimen/Margin5dp"
+                app:fontFamily="@font/montserrat_b"
+                android:textSize="@dimen/text_size_edit"
+                android:textColor="@color/black"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                tools:ignore="SpUsage" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_height="2sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/form_edit_text_background"
+            android:padding="@dimen/Margin5dp"
+            android:layout_marginBottom="@dimen/Margin10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:text="Enter OTP"
+                android:padding="@dimen/Margin5dp"
+                android:textSize="@dimen/text_size_edit"
+                android:layout_height="wrap_content"/>
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_edit_text_background"
+
+                android:inputType="number"
+                android:maxLength="4"
+
+                android:textSize="@dimen/text_size_edit"
+                android:hint="X-X-X-X"
+                android:fontFamily="@font/montserrat_b_i"
+                android:padding="16dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/amountLayout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/form_edit_text_background"
+            android:padding="@dimen/Margin5dp"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/Margin10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:text="Enter Case Amount"
+                android:padding="@dimen/Margin5dp"
+                android:textSize="@dimen/text_size_edit"
+                android:layout_height="wrap_content"/>
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_edit_text_background"
+
+                android:inputType="number"
+
+                android:textSize="@dimen/text_size_edit"
+                android:hint=" "
+                android:fontFamily="@font/montserrat_b_i"
+                android:padding="16dp"
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/montserrat_b"
+
+            android:padding="@dimen/Margin15dp"
+            android:text="Order Accept "
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/text_size_edit" />
+
+
+
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

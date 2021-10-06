@@ -1,0 +1,73 @@
+<resources>
+
+    <string-array name="arr_nav_e_com_items">
+        <item>@string/home</item>
+<!--        <item>@string/order</item>-->
+<!--        <item>@string/inbox</item>-->
+<!--        <item>@string/payment</item>-->
+<!--        <item>@string/inventory</item>-->
+<!--        <item>@string/offer</item>-->
+<!--        <item>@string/coupons</item>-->
+    </string-array>
+
+    <string-array name="arr_nav_service_items">
+        <item>@string/home</item>
+<!--        <item>@string/order</item>-->
+<!--        <item>@string/inbox</item>-->
+<!--        <item>@string/payment</item>-->
+
+<!--        <item>@string/offer</item>-->
+<!--        <item>@string/coupons</item>-->
+    </string-array>
+    <string name="home">Home</string>
+    <string name="coupons">Coupons</string>
+    <string name="order">Order</string>
+    <string name="inbox">inbox</string>
+    <string name="inventory">inventory</string>
+    <string name="payment">payments</string>
+    <string name="offer">offer</string>
+    <string name="service">service</string>
+
+
+    <string name="app_name">Driver App</string>
+
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="default_notification_channel_id">ServiceBooking</string>
+
+    <string name="string_internet_connection_not_available">Internet Connection Not Available</string>
+    <string name="string_some_thing_wrong">Something went wrong.</string>
+    <string name="contentDescription">ImageView</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="permission_rationale">Please grant location permission to start the service</string>
+    <string name="title_alert_no_intenet">No internet</string>
+    <string name="msg_alert_no_internet">Please make sure that you have active internet connection.</string>
+    <string name="no_google_playservice_available">No Google Playservice found. Please install it.</string>
+    <string name="msg_location_service_not_started">Location Tracking Not Started</string>
+    <string name="msg_location_service_started">Location Tracking Started</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="vendor_name">Plumber Brothers</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="password">Password</string>
+    <string name="otp_verify">Verify OTP</string>
+    <string name="otp_message">Kindly check your SMS send on +91 989 878 XXXX and
+your email examplemail@gmail.com</string>
+    <string name="hint_mob_em">Mobile no or email ID</string>
+    <string name="hint_otp">Verify OTP</string>
+    <string name="hint_kindly">Verify OTP</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="forget_password">Forget Pin ? Click Here ?</string>
+    <string name="become_vendor">Become Vendor</string>
+    <string name="or">Or</string>
+    <string name="login">LOGIN</string>
+    <string name="sing_up">Dont have an account yet ? Sign up !</string>
+    <string name="fb_login">Login with Facebook</string>
+    <string name="g_login">Login with gmail</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

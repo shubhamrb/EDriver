@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/Margin10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tittleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="@dimen/Margin10dp"
+                    android:text="Tittle Name"
+                    android:textSize="@dimen/textsize18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4">
+
+                <ImageView
+                    android:id="@+id/closeImg"
+                    android:layout_width="150dp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_close_black_24dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_fram_bg"
+            android:drawableRight="@drawable/ic_search_black_24dp"
+
+            android:hint="Search "
+            android:inputType="text"
+            android:padding="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+
+            android:divider="@null"
+            />
+
+        <LinearLayout
+            android:id="@+id/attendanceId"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_width="@dimen/Margin50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="@dimen/Margin50dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Fetching the data.."
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="@dimen/Margin10dp"
+                android:textSize="@dimen/Margin15dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

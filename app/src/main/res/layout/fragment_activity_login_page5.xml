@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+
+
+
+    android:background="@color/white"
+    android:padding="@dimen/Margin10dp"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="end|bottom"
+        android:gravity="end|bottom"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tittle_text_size"
+            android:layout_marginBottom="@dimen/Margin15dp"
+            android:gravity="center|start"
+
+            android:text="Your \nNew PIN ?"
+
+            android:textColor="@color/colorPrimary"
+
+            android:textSize="30sp"
+
+            android:textStyle="normal"
+            app:fontFamily="@font/montserrat_b"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/form_edit_text_background"
+            android:padding="@dimen/Margin5dp"
+            android:layout_marginBottom="@dimen/Margin10dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/Margin5dp"
+                android:text="Enter New Password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_edit" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_edit_text_background"
+
+                android:fontFamily="@font/montserrat_b_i"
+
+                android:hint="***********"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_edit" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin10dp"
+            android:background="@drawable/form_edit_text_background"
+            android:orientation="vertical"
+            android:padding="@dimen/Margin5dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/Margin5dp"
+                android:text="Re-Enter New Password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_edit" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_edit_text_background"
+
+                android:fontFamily="@font/montserrat_b_i"
+
+                android:hint="***********"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_edit" />
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/montserrat_b"
+
+            android:padding="@dimen/Margin15dp"
+            android:text="Verify OTP"
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_edit" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

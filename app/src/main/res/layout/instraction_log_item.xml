@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+android:layout_margin="@dimen/Margin5dp"
+    app:contentPadding="@dimen/Margin5dp"
+
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:id="@+id/cardView">
+
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:padding="@dimen/Margin10dp"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_weight="4"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:weightSum="2"
+           android:layout_height="wrap_content">
+ <androidx.appcompat.widget.LinearLayoutCompat
+     android:layout_width="match_parent"
+     android:layout_weight="1"
+     android:layout_height="wrap_content">
+     <com.google.android.material.textview.MaterialTextView
+         android:id="@+id/remarkBy"
+         android:layout_width="match_parent"
+         android:text="Save11"
+         android:textSize="@dimen/Margin15dp"
+         android:fontFamily="@font/montserrat_b"
+         android:textColor="@color/black"
+         android:layout_height="wrap_content"/>
+
+ </androidx.appcompat.widget.LinearLayoutCompat>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+     <com.google.android.material.textview.MaterialTextView
+              android:id="@+id/tvpProduct"
+               android:layout_width="match_parent"
+               android:text="Week Special offer"
+               android:textSize="@dimen/Margin10dp"
+               android:fontFamily="@font/montserrat"
+               android:textColor="@color/black"
+               android:layout_height="wrap_content"/>
+
+           <com.google.android.material.textview.MaterialTextView
+               android:id="@+id/remark"
+               android:layout_width="match_parent"
+               android:text="Valid : 11 Jan 2020"
+               android:textSize="@dimen/Margin10dp"
+               android:fontFamily="@font/montserrat"
+               android:layout_gravity="end"
+               android:gravity="end"
+               android:textColor="@color/black"
+               android:layout_height="wrap_content"/>
+           <com.google.android.material.textview.MaterialTextView
+               android:id="@+id/left_oder_tv"
+               android:layout_width="match_parent"
+               android:text=""
+               android:textSize="@dimen/Margin10dp"
+               android:fontFamily="@font/montserrat"
+               android:layout_gravity="end"
+               android:gravity="end"
+               android:textColor="@color/black"
+               android:layout_height="wrap_content"/>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</com.google.android.material.card.MaterialCardView>
